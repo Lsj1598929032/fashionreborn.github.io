@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fashion Reborn - 专业服装改造艺术空间，提供创意改造服务与面料库存对接">
+  <title>Fashion Reborn - 服装改造艺术空间</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/cube-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-text">Fashion</span>
+          <span class="stitch-element">✂</span>
+          <span class="logo-text">Reborn</span>
+        </a>
+      </div>
+      
+      <nav class="main-nav">
+        <ul>
+          <li class="active"><a href="#home">首页</a></li>
+          <li class="has-dropdown"><a href="#workshop">解构实验室</a>
+            <div class="nav-dropdown" data-title="解构实验室">
+              <a href="#material-library" class="dropdown-item">
+                <i class="fas fa-book"></i>
+                <span>材质图书馆</span>
+              </a>
+              <a href="#ar-scanner" class="dropdown-item">
+                <i class="fas fa-camera"></i>
+                <span>AR材质扫描器</span>
+              </a>
+              <a href="#project-archive" class="dropdown-item">
+                <i class="fas fa-archive"></i>
+                <span>作品档案馆</span>
+              </a>
+              <a href="#inspiration-incubator" class="dropdown-item">
+                <i class="fas fa-lightbulb"></i>
+                <span>灵感孵化器</span>
+              </a>
+              <a href="#tool-museum" class="dropdown-item">
+                <i class="fas fa-tools"></i>
+                <span>工具博物馆</span>
+              </a>
+            </div>
+          </li>
+          <li class="has-dropdown"><a href="#community">纤维会议</a>
+            <div class="nav-dropdown" data-title="纤维会议">
+              <a href="#material-island" class="dropdown-item">
+                <i class="fas fa-island-tropical"></i>
+                <span>材料漂流岛</span>
+              </a>
+              <a href="#makers-alliance" class="dropdown-item">
+                <i class="fas fa-users"></i>
+                <span>改造者联盟</span>
+              </a>
+              <a href="#rebirth-arena" class="dropdown-item">
+                <i class="fas fa-trophy"></i>
+                <span>废材重生擂台</span>
+              </a>
+              <a href="#carbon-balance" class="dropdown-item">
+                <i class="fas fa-leaf"></i>
+                <span>碳迹平衡池</span>
+              </a>
+              <a href="#gene-library" class="dropdown-item">
+                <i class="fas fa-dna"></i>
+                <span>改造基因库</span>
+              </a>
+              <a href="#virtual-market" class="dropdown-item">
+                <i class="fas fa-store"></i>
+                <span>虚实共生市集</span>
+              </a>
+              <a href="#dispute-center" class="dropdown-item">
+                <i class="fas fa-balance-scale"></i>
+                <span>纠纷调解中心</span>
+              </a>
+            </div>
+          </li>
+          <li><a href="#inventory">余料暗房</a></li>
+          <li><a href="about.html">关于我</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-controls">
+        <div class="language-switch">
+          <button class="lang-btn active" data-lang="zh">中</button>
+          <span class="lang-separator">|</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        
+        <button class="theme-toggle" aria-label="切换夜间模式">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="video-container">
+        <video autoplay loop muted playsinline>
+          <source src="videos/fashion-reborn-bg.mp4" type="video/mp4">
+          <!-- 备用图片替代视频 -->
+          <img src="images/fashion-reborn-bg.jpg" alt="服装改造过程">
+        </video>
+        <div class="overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">Fashion Reborn</h1>
+        <p class="hero-subtitle">重新定义时尚，赋予旧衣新生</p>
+        <a href="#showcase" class="cta-button">探索改造之旅</a>
+      </div>
+    </section>
+
+    <section id="showcase" class="showcase">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>精选作品</h2>
+        </div>
+        <div class="showcase-container">
+          <!-- 3D展示墙将通过JS实现 -->
+          <div class="placeholder-3d">3D作品展示区域</div>
+        </div>
+        
+        <div class="stats-dashboard">
+          <div class="stat-item">
+            <div class="stat-value">656</div>
+            <div class="stat-label">累计改造衣物</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">832</div>
+            <div class="stat-label">节约布料(米)</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">5890</div>
+            <div class="stat-label">社区活跃用户</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="workshop" class="workshop">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="stable-position">解构实验室</h2>
+          <p>探索可持续时尚的无限可能</p>
+        </div>
+        
+        <!-- 材质图书馆 -->
+        <div id="material-library" class="workshop-module material-library">
+          <h3 class="subsection-title">材质图书馆</h3>
+          <p class="subsection-description">探索可持续材料的无限可能</p>
+          
+          <!-- 三维材质墙 -->
+          <div class="material-wall-container">
+            <div class="wall-controls">
+              <button class="wall-control-btn" id="rotate-left"><i class="fas fa-undo"></i></button>
+              <button class="wall-control-btn" id="rotate-right"><i class="fas fa-redo"></i></button>
+              <button class="wall-control-btn" id="zoom-in"><i class="fas fa-search-plus"></i></button>
+              <button class="wall-control-btn" id="zoom-out"><i class="fas fa-search-minus"></i></button>
+              <button class="wall-control-btn" id="reset-view"><i class="fas fa-home"></i></button>
+            </div>
+            
+            <div class="material-wall" id="material-wall">
+              <!-- 3D布料将通过JavaScript动态加载 -->
+              <div class="loading-materials">
+                <div class="spinner"></div>
+                <p>加载材质数据中...</p>
+              </div>
+            </div>
+            
+            <div class="material-categories">
+              <button class="category-btn active" data-category="all">全部</button>
+              <button class="category-btn" data-category="cotton">棉麻</button>
+              <button class="category-btn" data-category="silk">丝绸</button>
+              <button class="category-btn" data-category="denim">牛仔</button>
+              <button class="category-btn" data-category="wool">羊毛</button>
+              <button class="category-btn" data-category="synthetic">合成纤维</button>
+            </div>
+          </div>
+          
+          <!-- 材质档案弹窗 -->
+          <div class="material-modal" id="material-modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 id="material-name">材质名称</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+              </div>
+              
+              <div class="modal-body">
+                <div class="material-preview">
+                  <div class="material-3d-preview" id="material-preview-3d">
+                    <!-- 3D预览将在这里渲染 -->
+                  </div>
+                  <div class="material-texture" id="material-texture">
+                    <!-- 材质纹理将在这里显示 -->
+                  </div>
+                </div>
+                
+                <div class="material-properties">
+                  <h4>物理特性</h4>
+                  <div class="properties-chart" id="properties-chart">
+                    <!-- 特性图表将在这里渲染 -->
+                  </div>
+                  
+                  <div class="properties-data">
+                    <div class="property-item">
+                      <span class="property-label">重量</span>
+                      <div class="property-value">
+                        <span id="weight-value">0</span>
+                        <span class="unit">g/m²</span>
+                      </div>
+                    </div>
+                    
+                    <div class="property-item">
+                      <span class="property-label">延展性</span>
+                      <div class="property-value">
+                        <span id="stretch-value">0</span>
+                        <span class="unit">%</span>
+                      </div>
+                    </div>
+                    
+                    <div class="property-item">
+                      <span class="property-label">透气性</span>
+                      <div class="property-value">
+                        <span id="breathability-value">0</span>
+                        <span class="unit">cm³/cm²/s</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="material-metrics">
+                  <div class="difficulty-meter">
+                    <h4>改造难度系数</h4>
+                    <div class="needle-icons" id="difficulty-needles">
+                      <!-- 针图标将在这里动态生成 -->
+                    </div>
+                    <span class="difficulty-text" id="difficulty-text">中等难度</span>
+                  </div>
+                  
+                  <div class="sustainability-index">
+                    <h4>可持续指数</h4>
+                    <div class="carbon-footprint">
+                      <div class="carbon-chart" id="carbon-chart">
+                        <!-- 环形进度条将在这里渲染 -->
+                      </div>
+                      <div class="carbon-data">
+                        <span class="carbon-value" id="carbon-value">0</span>
+                        <span class="carbon-unit">kg CO₂</span>
+                        <span class="carbon-comparison" id="carbon-comparison">vs 传统生产</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="material-applications">
+                  <h4>推荐应用</h4>
+                  <div class="applications-grid" id="applications-grid">
+                    <!-- 应用案例将在这里动态生成 -->
+                  </div>
+                </div>
+              </div>
+              
+              <div class="modal-footer">
+                <a href="#" class="btn btn-outline" id="download-data">下载材质数据</a>
+                <a href="#" class="btn btn-primary" id="view-projects">查看相关项目</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- AR材质扫描器 -->
+        <div id="ar-scanner" class="workshop-module ar-scanner">
+          <h3 class="subsection-title">AR材质扫描器</h3>
+          <p class="subsection-description">智能识别材质，提供改造建议</p>
+          
+          <div class="scanner-container">
+            <div class="upload-area" id="upload-area">
+              <i class="fas fa-cloud-upload-alt"></i>
+              <p>点击或拖拽照片至此处</p>
+              <span class="upload-note">支持JPG、PNG格式，最大10MB</span>
+              <input type="file" id="fabric-upload" accept="image/jpeg,image/png" hidden>
+            </div>
+            
+            <div class="scan-result" id="scan-result">
+              <!-- 扫描结果将在这里显示 -->
+              <div class="result-placeholder">
+                <i class="fas fa-tshirt"></i>
+                <p>您的识别结果将在这里显示</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 作品档案馆 -->
+        <div id="project-archive" class="workshop-module project-archive">
+          <h3 class="subsection-title">作品档案馆</h3>
+          <p class="subsection-description">探索历史作品，获取灵感</p>
+          
+          <div class="archive-controls">
+            <div class="view-selector">
+              <button class="view-btn active" data-view="timeline">时间胶囊视图</button>
+              <button class="view-btn" data-view="comparison">对比研究模式</button>
+              <button class="view-btn" data-view="resources">资源包下载</button>
+            </div>
+            <div class="archive-search">
+              <input type="text" placeholder="搜索作品关键词...">
+              <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+          
+          <!-- 时间胶囊视图 -->
+          <div class="archive-view timeline-view active">
+            <div class="spiral-timeline">
+              <div class="timeline-container" id="spiral-timeline">
+                <!-- 时间线将由JS动态生成 -->
+                <div class="timeline-loading">
+                  <div class="spinner"></div>
+                  <p>加载时间线数据中...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 灵感孵化器 -->
+        <div id="inspiration-incubator" class="workshop-module inspiration-incubator">
+          <h3 class="subsection-title">灵感孵化器</h3>
+          <p class="subsection-description">激发创意，挑战自我</p>
+          
+          <div class="incubator-grid">
+            <!-- 随机挑战生成器 -->
+            <div class="incubator-card challenge-generator">
+              <div class="card-header">
+                <h4>随机挑战生成器</h4>
+                <button class="refresh-btn" id="refresh-challenge"><i class="fas fa-sync-alt"></i></button>
+              </div>
+              <div class="card-body">
+                <div class="challenge-container" id="challenge-container">
+                  <div class="challenge-item">
+                    <span class="challenge-label">基础材料</span>
+                    <span class="challenge-value" id="challenge-material">旧牛仔裤</span>
+                  </div>
+                  <div class="challenge-item">
+                    <span class="challenge-label">限制条件</span>
+                    <span class="challenge-value" id="challenge-constraint">仅允许使用红色缝线</span>
+                  </div>
+                  <div class="challenge-item">
+                    <span class="challenge-label">目标风格</span>
+                    <span class="challenge-value" id="challenge-style">赛博朋克婚礼服</span>
+                  </div>
+                </div>
+                <button class="challenge-btn" id="accept-challenge">接受挑战</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 工具博物馆 -->
+        <div id="tool-museum" class="workshop-module tool-museum">
+          <h3 class="subsection-title">工具博物馆</h3>
+          <p class="subsection-description">探索改造工具的历史与未来</p>
+          
+          <div class="tool-gallery">
+            <!-- 工具展示将通过JS动态加载 -->
+            <div class="loading-tools">
+              <div class="spinner"></div>
+              <p>加载工具数据中...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="community" class="community">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>纤维会议</h2>
+          <p>连接改造者，共享资源与技能，创造可持续时尚未来</p>
+        </div>
+        
+        <!-- 材料漂流岛 -->
+        <div id="material-island" class="community-module material-island">
+          <h3 class="subsection-title">材料漂流岛</h3>
+          <p class="subsection-description">P2P布料交易所，赋予每块布料独特的生命旅程</p>
+          
+          <div class="island-features">
+            <!-- 智能材料护照系统 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-passport"></i>
+              </div>
+              <h4>智能材料护照</h4>
+              <p>每块布料拥有NFT数字证书，记录来源追溯、物理参数及漂流历史</p>
+              <div class="feature-preview">
+                <div class="passport-preview">
+                  <div class="passport-header">
+                    <div class="passport-logo"></div>
+                    <div class="passport-title">材料数字护照</div>
+                  </div>
+                  <div class="passport-content">
+                    <div class="passport-info">
+                      <span class="info-label">编号:</span>
+                      <span class="info-value">FRM-2025-8721</span>
+                    </div>
+                    <div class="passport-info">
+                      <span class="info-label">材质:</span>
+                      <span class="info-value">优质丝绸混纺</span>
+                    </div>
+                    <div class="passport-owner">
+                      <div class="owner-avatar"></div>
+                      <div class="owner-info">
+                        <div class="owner-name">前任主人: 林小雨</div>
+                        <div class="ownership-period">2023.05-2024.02</div>
+                      </div>
+                    </div>
+                    <div class="passport-story">
+                      "这块面料来自我奶奶的旗袍，承载了三代人的记忆..."
+                    </div>
+                    <div class="view-more">查看完整历史</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- AR布料预览舱 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-vr-cardboard"></i>
+              </div>
+              <h4>AR布料预览舱</h4>
+              <p>扫描布料编号，在现实空间投射3D布料模型，支持虚拟剪裁</p>
+              <div class="feature-preview">
+                <div class="ar-preview">
+                  <div class="ar-screen">
+                    <div class="ar-overlay">
+                      <div class="ar-fabric"></div>
+                      <div class="ar-controls">
+                        <button class="ar-btn" aria-label="旋转"><i class="fas fa-sync-alt"></i></button>
+                        <button class="ar-btn" aria-label="剪裁"><i class="fas fa-cut"></i></button>
+                        <button class="ar-btn" aria-label="缩放"><i class="fas fa-search-plus"></i></button>
+                      </div>
+                      <div class="ar-gesture-hint">
+                        <i class="fas fa-hand-pointer"></i>
+                        <span>手势划动预览裁剪效果</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ar-scan-button">
+                    <i class="fas fa-qrcode"></i>
+                    <span>扫描体验AR预览</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 漂流规则引擎 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-exchange-alt"></i>
+              </div>
+              <h4>漂流规则引擎</h4>
+              <p>智能匹配系统，基于用户改造等级与布料难度系数进行合理分配</p>
+              <div class="feature-preview">
+                <div class="rules-engine">
+                  <div class="code-block">
+                    <pre><code>if 用户改造等级 ≥ 布料难度系数:
+    优先匹配同城布料
+else:
+    推荐技能培训模块+相似低价材料</code></pre>
+                  </div>
+                  <div class="deposit-system">
+                    <div class="deposit-icon">
+                      <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="deposit-info">
+                      <h5>漂流押金制度</h5>
+                      <p>完成改造后押金转化为社区积分</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="island-cta">
+            <button class="btn-explore-island">
+              <i class="fas fa-compass"></i>
+              <span>探索材料漂流岛</span>
+            </button>
+          </div>
+        </div>
+        
+        <!-- 改造者联盟 -->
+        <div id="makers-alliance" class="community-module makers-alliance">
+          <h3 class="subsection-title">改造者联盟</h3>
+          <p class="subsection-description">技能协作网络，连接全球改造爱好者</p>
+          
+          <div class="alliance-features">
+            <!-- 能力者雷达图 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-chart-radar"></i>
+              </div>
+              <h4>能力者雷达图</h4>
+              <p>用户技能六维评估，展示个人特长并获得动态能力标签</p>
+              <div class="feature-preview">
+                <div class="radar-chart">
+                  <div class="radar-web"></div>
+                  <div class="radar-data">
+                    <div class="radar-point" style="--x: 80%; --y: 30%;" data-skill="剪裁精度">
+                      <div class="point-hint">剪裁精度: 8.5</div>
+                    </div>
+                    <div class="radar-point" style="--x: 20%; --y: 30%;" data-skill="缝合速度">
+                      <div class="point-hint">缝合速度: 6.2</div>
+                    </div>
+                    <div class="radar-point" style="--x: 30%; --y: 70%;" data-skill="设计创新">
+                      <div class="point-hint">设计创新: 9.0</div>
+                    </div>
+                    <div class="radar-point" style="--x: 70%; --y: 70%;" data-skill="工具知识">
+                      <div class="point-hint">工具知识: 7.3</div>
+                    </div>
+                    <div class="radar-point" style="--x: 90%; --y: 50%;" data-skill="教学能力">
+                      <div class="point-hint">教学能力: 5.8</div>
+                    </div>
+                    <div class="radar-point" style="--x: 50%; --y: 90%;" data-skill="环保指数">
+                      <div class="point-hint">环保指数: 8.9</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag">锁边达人</span>
+                  <span class="skill-tag active">配色魔法师</span>
+                  <span class="skill-tag">刺绣专家</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 跨时空协作工坊 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-users-cog"></i>
+              </div>
+              <h4>跨时空协作工坊</h4>
+              <p>分布式改造接力，多人协作完成改造项目</p>
+              <div class="feature-preview">
+                <div class="collaboration-chain">
+                  <div class="collab-stage">
+                    <div class="stage-avatar"></div>
+                    <div class="stage-info">
+                      <div class="stage-title">用户A: 设计图纸</div>
+                      <div class="stage-progress completed">已完成</div>
+                    </div>
+                  </div>
+                  <div class="chain-arrow"><i class="fas fa-arrow-down"></i></div>
+                  <div class="collab-stage active">
+                    <div class="stage-avatar"></div>
+                    <div class="stage-info">
+                      <div class="stage-title">用户B: 裁剪</div>
+                      <div class="stage-progress">进行中</div>
+                    </div>
+                  </div>
+                  <div class="chain-arrow"><i class="fas fa-arrow-down"></i></div>
+                  <div class="collab-stage">
+                    <div class="stage-avatar"></div>
+                    <div class="stage-info">
+                      <div class="stage-title">用户C: 装饰</div>
+                      <div class="stage-progress">等待中</div>
+                    </div>
+                  </div>
+                  <div class="chain-arrow"><i class="fas fa-arrow-down"></i></div>
+                  <div class="collab-result">
+                    <i class="fas fa-certificate"></i>
+                    <span>NFT作品链上确权</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 技能借贷市场 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h4>技能借贷市场</h4>
+              <p>发布紧急需求或提供远程指导服务，按分钟计费</p>
+              <div class="feature-preview">
+                <div class="skill-marketplace">
+                  <div class="marketplace-listing">
+                    <div class="listing-avatar"></div>
+                    <div class="listing-details">
+                      <div class="listing-title">急需擅长汉服改造者</div>
+                      <div class="listing-desc">3小时紧急求助，需完成袖口重构</div>
+                      <div class="listing-meta">
+                        <span class="listing-time">发布于2小时前</span>
+                        <span class="listing-payment">提供: 300积分</span>
+                      </div>
+                    </div>
+                    <button class="listing-action">应助</button>
+                  </div>
+                  <div class="marketplace-listing offering">
+                    <div class="listing-avatar"></div>
+                    <div class="listing-details">
+                      <div class="listing-title">提供刺绣远程指导</div>
+                      <div class="listing-desc">10年经验，苏绣技法专家</div>
+                      <div class="listing-meta">
+                        <span class="listing-time">在线</span>
+                        <span class="listing-payment">费率: 50积分/30分钟</span>
+                      </div>
+                    </div>
+                    <button class="listing-action">预约</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="alliance-cta">
+            <button class="btn-join-alliance">
+              <i class="fas fa-hands-helping"></i>
+              <span>加入改造者联盟</span>
+            </button>
+          </div>
+        </div>
+        
+        <!-- 废材重生擂台 -->
+        <div id="rebirth-arena" class="community-module rebirth-arena">
+          <h3 class="subsection-title">废材重生擂台</h3>
+          <p class="subsection-description">竞技化改造系统，挑战创意极限</p>
+          
+          <div class="arena-current-challenge">
+            <div class="challenge-header">
+              <h4>本周挑战主题</h4>
+              <div class="challenge-timer">
+                <i class="fas fa-hourglass-half"></i>
+                <span id="challenge-countdown">2天13小时26分</span>
+              </div>
+            </div>
+            <div class="challenge-content">
+              <div class="challenge-title">"一衣多命"</div>
+              <div class="challenge-description">用1件衬衫制作3件不同风格配饰</div>
+              <div class="challenge-constraints">
+                <div class="constraint">
+                  <i class="fas fa-ban"></i>
+                  <span>禁止使用额外布料</span>
+                </div>
+                <div class="constraint">
+                  <i class="fas fa-clock"></i>
+                  <span>限时3小时内完成</span>
+                </div>
+                <div class="constraint">
+                  <i class="fas fa-thumbs-up"></i>
+                  <span>观众投票决定额外材料</span>
+                </div>
+              </div>
+            </div>
+            <div class="challenge-participants">
+              <div class="participant-avatars">
+                <div class="participant-avatar"></div>
+                <div class="participant-avatar"></div>
+                <div class="participant-avatar"></div>
+                <div class="participant-count">+24</div>
+              </div>
+              <button class="btn-join-challenge">
+                <i class="fas fa-trophy"></i>
+                <span>参与挑战</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="arena-ai-judge">
+            <div class="ai-judge-header">
+              <h4>AI裁判系统</h4>
+              <div class="ai-badge">
+                <i class="fas fa-robot"></i>
+                <span>智能评分</span>
+              </div>
+            </div>
+            <div class="ai-judge-preview">
+              <div class="judging-criteria">
+                <div class="criterion">
+                  <div class="criterion-label">创新度评估</div>
+                  <div class="criterion-bar">
+                    <div class="criterion-fill" style="--fill-percent: 85%;">85%</div>
+                  </div>
+                  <div class="criterion-detail">对比历史作品库检测设计原创性</div>
+                </div>
+                <div class="criterion">
+                  <div class="criterion-label">可持续评分</div>
+                  <div class="criterion-bar">
+                    <div class="criterion-fill" style="--fill-percent: 92%;">92%</div>
+                  </div>
+                  <div class="criterion-detail">计算材料利用率与工艺环保值</div>
+                </div>
+                <div class="criterion">
+                  <div class="criterion-label">技术难度</div>
+                  <div class="criterion-bar">
+                    <div class="criterion-fill" style="--fill-percent: 78%;">78%</div>
+                  </div>
+                  <div class="criterion-detail">评估技术复杂度与执行精确度</div>
+                </div>
+              </div>
+              <div class="ai-comment">
+                <div class="comment-header">
+                  <i class="fas fa-quote-left"></i>
+                  <span>AI诗化点评</span>
+                </div>
+                <div class="comment-content">
+                  丝线穿梭间，法式缝边如行云流水，
+                  拼接处理展现精妙构思，
+                  色彩搭配暗合自然平衡律，
+                  整体呈现出都市森系的和谐之美...
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="arena-champions">
+            <h4>擂台冠军荣誉殿堂</h4>
+            <div class="champions-podium">
+              <div class="podium-item silver">
+                <div class="champion-avatar">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="亚军">
+                  <div class="champion-medal"><i class="fas fa-medal"></i></div>
+                </div>
+                <div class="champion-name">林小雨</div>
+                <div class="position-label">亚军</div>
+                <div class="podium-platform" data-height="2"></div>
+              </div>
+              <div class="podium-item gold">
+                <div class="champion-avatar">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="冠军">
+                  <div class="champion-medal"><i class="fas fa-crown"></i></div>
+                </div>
+                <div class="champion-name">张子扬</div>
+                <div class="position-label">冠军</div>
+                <div class="podium-platform" data-height="3"></div>
+              </div>
+              <div class="podium-item bronze">
+                <div class="champion-avatar">
+                  <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="季军">
+                  <div class="champion-medal"><i class="fas fa-award"></i></div>
+                </div>
+                <div class="champion-name">王美琪</div>
+                <div class="position-label">季军</div>
+                <div class="podium-platform" data-height="1"></div>
+              </div>
+            </div>
+            
+            <div class="champion-project">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1581318767261-5bbcf2e98582?q=80&w=300" alt="冠军作品">
+                <div class="project-overlay">
+                  <h5>「废料新生」系列</h5>
+                  <p>回收牛仔布料改造的摩登街头服饰</p>
+                </div>
+              </div>
+              <div class="project-votes">
+                <div class="vote-count"><i class="fas fa-heart"></i> 1,342</div>
+                <div class="judges-score"><i class="fas fa-star"></i> 9.7</div>
+              </div>
+            </div>
+            
+            <div class="champions-timeline">
+              <h5>历届擂台冠军</h5>
+              <div class="timeline-scroll">
+                <div class="timeline-item">
+                  <div class="timeline-date">2023春季</div>
+                  <div class="timeline-winner">张子扬</div>
+                  <div class="timeline-badge"><i class="fas fa-trophy"></i></div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">2022冬季</div>
+                  <div class="timeline-winner">周小萌</div>
+                  <div class="timeline-badge"><i class="fas fa-trophy"></i></div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">2022秋季</div>
+                  <div class="timeline-winner">李明哲</div>
+                  <div class="timeline-badge"><i class="fas fa-trophy"></i></div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">2022夏季</div>
+                  <div class="timeline-winner">孙佳琪</div>
+                  <div class="timeline-badge"><i class="fas fa-trophy"></i></div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">2022春季</div>
+                  <div class="timeline-winner">陈思远</div>
+                  <div class="timeline-badge"><i class="fas fa-trophy"></i></div>
+                </div>
+              </div>
+            </div>
+            
+            <h5 class="benefits-title">冠军专属权益</h5>
+            <div class="champions-benefits">
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <i class="fas fa-coins"></i>
+                </div>
+                <div class="benefit-info">
+                  <h5>材料银行VIP额度</h5>
+                  <p>优先获取稀缺面料资源</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <i class="fas fa-museum"></i>
+                </div>
+                <div class="benefit-info">
+                  <h5>博物馆永久展区</h5>
+                  <p>作品展示在线下实体展览</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <i class="fas fa-certificate"></i>
+                </div>
+                <div class="benefit-info">
+                  <h5>设计专利申请辅助</h5>
+                  <p>获得专业知识产权保护支持</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="benefit-info">
+                  <h5>导师连线机会</h5>
+                  <p>与行业顶尖设计师一对一交流</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="join-challenge-cta">
+              <button class="btn-join-challenge">
+                <i class="fas fa-trophy"></i>
+                参与本季擂台赛
+              </button>
+              <p class="challenge-deadline">本季挑战将于 <span class="deadline-date">6月30日</span> 截止</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 其他模块 -->
+        <div class="other-modules">
+          <div id="carbon-balance" class="module-card carbon-pool">
+            <div class="module-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h4>碳迹平衡池</h4>
+            <p>环保激励体系，量化每次改造的环保贡献</p>
+            <a href="#carbon-balance" class="module-link">了解详情</a>
+          </div>
+          
+          <div id="gene-library" class="module-card gene-library">
+            <div class="module-icon">
+              <i class="fas fa-dna"></i>
+            </div>
+            <h4>改造基因库</h4>
+            <p>知识图谱系统，可视化技法的历史演变</p>
+            <a href="#remodel-genes" class="module-link">了解详情</a>
+          </div>
+          
+          <div id="virtual-market" class="module-card mixed-market">
+            <div class="module-icon">
+              <i class="fas fa-store"></i>
+            </div>
+            <h4>虚实共生市集</h4>
+            <p>混合现实展销会，线下实体与数字藏品融合</p>
+            <a href="#mixed-market" class="module-link">了解详情</a>
+          </div>
+          
+          <div id="dispute-center" class="module-card dispute-center">
+            <div class="module-icon">
+              <i class="fas fa-balance-scale"></i>
+            </div>
+            <h4>纠纷调解中心</h4>
+            <p>智能仲裁庭，维护社区交易公平公正</p>
+            <a href="#dispute-center" class="module-link">了解详情</a>
+          </div>
+        </div>
+        
+        <!-- 加入社区 -->
+        <div class="community-join">
+          <h3>加入纤维会议社区</h3>
+          <p>连接全球改造爱好者，共创可持续时尚未来</p>
+          <button class="btn-join-community">立即加入</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="inventory" class="inventory section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="cube-container">
+            <div class="cube">
+              <div class="cube-face cube-face-front"></div>
+              <div class="cube-face cube-face-back"></div>
+              <div class="cube-face cube-face-right"></div>
+              <div class="cube-face cube-face-left"></div>
+              <div class="cube-face cube-face-top"></div>
+              <div class="cube-face cube-face-bottom"></div>
+            </div>
+          </div>
+          <h2>余料暗房</h2>
+          <p>输入您想要的服装信息，我们将为您匹配库存并提供专业服装改造建议</p>
+        </div>
+        
+        <div class="chat-interface">
+          <div class="chat-sidebar">
+            <div class="sidebar-header">历史会话</div>
+            <!-- 历史会话 -->
+            <div class="session-item active">
+              <div class="session-title">牛仔外套改造咨询</div>
+              <div class="session-date">
+                <span class="date-icon"><i class="fas fa-clock"></i></span>
+                <span>2025-03-15</span>
+              </div>
+            </div>
+            <div class="session-item">
+              <div class="session-title">非遗婚服定制咨询</div>
+              <div class="session-date">
+                <span class="date-icon"><i class="fas fa-clock"></i></span>
+                <span>2025-02-28</span>
+              </div>
+            </div>
+            <div class="session-item">
+              <div class="session-title">衬衫非遗改造咨询</div>
+              <div class="session-date">
+                <span class="date-icon"><i class="fas fa-clock"></i></span>
+                <span>2025-01-10</span>
+              </div>
+            </div>
+            <div class="session-item">
+              <div class="session-title">运动服改造方案</div>
+              <div class="session-date">
+                <span class="date-icon"><i class="fas fa-clock"></i></span>
+                <span>2024-12-22</span>
+              </div>
+            </div>
+            <div class="session-item">
+              <div class="session-title">寻找特殊非遗面料</div>
+              <div class="session-date">
+                <span class="date-icon"><i class="fas fa-clock"></i></span>
+                <span>2024-11-25</span>
+              </div>
+            </div>
+            <div class="session-item">
+              <div class="session-title">非遗刺绣技法咨询</div>
+              <div class="session-date">
+                <span class="date-icon"><i class="fas fa-clock"></i></span>
+                <span>2024-10-18</span>
+              </div>
+            </div>
+            <div class="session-item">
+              <div class="session-title">传统扎染面料定制</div>
+              <div class="session-date">
+                <span class="date-icon"><i class="fas fa-clock"></i></span>
+                <span>2024-10-05</span>
+              </div>
+            </div>
+            <div class="session-item">
+              <div class="session-title">非遗织锦改造方案</div>
+              <div class="session-date">
+                <span class="date-icon"><i class="fas fa-clock"></i></span>
+                <span>2024-09-22</span>
+              </div>
+            </div>
+            <div class="session-item">
+              <div class="session-title">传统蜡染工艺咨询</div>
+              <div class="session-date">
+                <span class="date-icon"><i class="fas fa-clock"></i></span>
+                <span>2024-08-10</span>
+              </div>
+            </div>
+            <div class="session-item">
+              <div class="session-title">寻找非遗手工面料</div>
+              <div class="session-date">
+                <span class="date-icon"><i class="fas fa-clock"></i></span>
+                <span>2024-05-16</span>
+              </div>
+            </div>
+            <div class="session-item">
+              <div class="session-title">丝绸围巾改造</div>
+              <div class="session-date">
+                <span class="date-icon"><i class="fas fa-clock"></i></span>
+                <span>2024-04-20</span>
+              </div>
+            </div>
+            <div class="session-item new-chat">
+              <div class="session-title">开始新会话</div>
+            </div>
+          </div>
+          <div class="chat-main">
+            <div class="chat-messages" id="chat-messages">
+              <!-- 示例消息 -->
+              <div class="message system-message">
+                欢迎来到余料暗房！我是您的专属面料顾问。请告诉我您需要什么类型的面料或服装改造建议？
+              </div>
+              <div class="message user-message">
+                我有一件旧牛仔外套，想改造成背心，有什么建议吗？
+              </div>
+              <div class="message system-message">
+                牛仔外套改造成背心是个很棒的选择！根据我们的数据库分析，有几种改造方案：
+
+                <div class="suggestion-item">
+                  <strong>简约型</strong>
+                  <p>移除袖子，修整肩部和领口，保留原有口袋和扣子</p>
+                </div>
+
+                <div class="suggestion-item">
+                  <strong>解构型</strong>
+                  <p>拆分重组，加入不规则裁剪和露边设计</p>
+                </div>
+
+                <div class="suggestion-item">
+                  <strong>混搭型</strong>
+                  <p>结合其他材质，如皮革条带或针织面料</p>
+                </div>
+
+                您更偏好哪种风格？我们可以连接到匹配的余料资源。
+              </div>
+            </div>
+            <div class="chat-input">
+              <input type="text" placeholder="输入您的面料需求或问题..." aria-label="聊天输入框">
+              <button class="send-button" aria-label="发送消息"></button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 对接进度跟踪面板 -->
+        <div class="tracking-panel">
+          <h3>对接进度</h3>
+          <div class="process-flow">
+            <div class="progress-stage">
+              <div class="stage-number status-completed">1</div>
+              <div class="stage-name">需求分析</div>
+              <div class="stage-connector status-completed"></div>
+            </div>
+            
+            <div class="progress-stage">
+              <div class="stage-number status-active">2</div>
+              <div class="stage-name">布料匹配</div>
+              <div class="stage-connector status-active"></div>
+            </div>
+            
+            <div class="progress-stage">
+              <div class="stage-number status-pending">3</div>
+              <div class="stage-name">方案设计</div>
+              <div class="stage-connector status-pending"></div>
+            </div>
+            
+            <div class="progress-stage">
+              <div class="stage-number status-pending">4</div>
+              <div class="stage-name">样品制作</div>
+              <div class="stage-connector status-pending"></div>
+            </div>
+            
+            <div class="progress-stage">
+              <div class="stage-number status-pending">5</div>
+              <div class="stage-name">成品交付</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="social-media">
+        <h3>关注我们</h3>
+        <div class="social-icons">
+          <a href="https://weibo.com/u/7991829846" class="social-icon" target="_blank" rel="noopener">
+            <span class="icon-container"><i class="fab fa-weibo"></i></span>
+            <span>官方微博</span>
+          </a>
+          <a href="https://www.douyin.com/user/self" class="social-icon" target="_blank" rel="noopener">
+            <span class="icon-container"><i class="fab fa-tiktok"></i></span>
+            <span>抖音号</span>
+          </a>
+          <a href="https://www.xiaohongshu.com/user/profile/667c4113000000000b0305f5" class="social-icon" target="_blank" rel="noopener">
+            <span class="icon-container"><i class="fas fa-mobile-alt"></i></span>
+            <span>小红书</span>
+          </a>
+        </div>
+        <p class="social-connect-message">关注我们的社交媒体，获取最新服装改造灵感和实用技巧，参与互动赢取精美礼品！</p>
+      </div>
+      
+      <div class="newsletter">
+        <h3>订阅新闻</h3>
+        <p>订阅我们的电子报，了解最新的设计趋势、改造技巧和独家优惠信息。</p>
+        <form class="subscribe-form">
+          <div class="subscribe-input-group">
+            <input type="email" placeholder="请输入您的电子邮箱" required>
+          </div>
+          <button type="submit">立即订阅 <i class="fas fa-paper-plane"></i></button>
+        </form>
+        <div class="subscribe-benefits">
+          <div class="benefit-item">
+            <i class="fas fa-check-circle"></i>
+            <span>每周更新</span>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-check-circle"></i>
+            <span>专属优惠</span>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-check-circle"></i>
+            <span>随时退订</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="copyright">
+        © 2025 Fashion Reborn. 保留所有权利。
+      </div>
+      <div class="eco-certifications">
+        <span class="eco-badge">可持续时尚认证</span>
+        <span class="visitor-count">访问量: 63950</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html> 
